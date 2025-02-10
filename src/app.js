@@ -12,18 +12,22 @@ window.onload = function() {
   let noun = ['recipe','horse','dog','car'];
   let extension = ['.com', '.net', '.us', '.io'];
   
-  let domainName = [...pronoun,...adjective,...noun];
+  let domainName = document.getElementById("domain");
+  let domain = [];
+  
   
   for(let i=0;i<pronoun.length;i++){
     for(let a=0; a<adjective.length;a++){
-      for(let n=0; b<noun.length; n++){
-        for(let e=0; 0<extension.length; e++){
+      for(let n=0; n<noun.length; n++){
+        for(let e=0; e<extension.length; e++){
           
-          let domainName = pronoun[i] = adjective[a] + noun[n] + extension[e];
+          let domainGenerator = pronoun[i] + adjective[a] + noun[n] + extension[e];
+          domain.push(domainGenerator);
         }
       }
     }
     
   }
+  console.log(domain);
+  domainName.innerHTML = domain.join('<br>');
 }
-console.log(domainName);
