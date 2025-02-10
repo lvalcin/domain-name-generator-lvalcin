@@ -5,7 +5,6 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-// console.log("Any string");
 window.onload = function() {
   let pronoun =['the','our','his', 'her'];
   let adjective =['great','big','amazing','fancy'];
